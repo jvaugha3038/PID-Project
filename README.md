@@ -10,7 +10,7 @@
 * [End Result](#EndResult)
 * [Problems](#Problems)
 * [Reflection](#Reflection)
-* 
+---
 # `Goal`
 
 
