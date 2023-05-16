@@ -29,6 +29,11 @@ A rude awakening came when I remembered that we like need an arduino, screen, an
 # `Code`
 The code was challenging overall, but once the main hurdle was cleared (finding good PID code online), it started to get easier. The first problem was that both the gyroscope and the LCD screen required SDA and SCL pins, and the Metro M4 only had one of each. The solution we came up with was to make them both share the SDA and SCL pins, which didn't seem like it should have worked, but it did. The first PID system we tried was simple-pid (from river), but I ended up switching to one that was even simpler. Its a function instead of a library, that just takes a variable and spits out an output when called on. (found here: https://apmonitor.com/pdc/index.php/Main/TCLabPIDControl) 
 
+<details>
+<summary><b>Click to Show<b></summary>
+        
+<p>
+        
 ```
 
 import board
@@ -166,6 +171,10 @@ while True:
     time.sleep(dt) # Sleeps for a controlled amount of time to make the gyroscope and PID work.
     print("-------------")
 ```
+</p>  
+    
+</details>
+        
 # `Building`
 
 ## Switching Transistors
