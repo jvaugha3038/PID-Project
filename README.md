@@ -3,7 +3,6 @@
 ## Table of Contents
 * [Table of Contents](#TableOfContents)
 * [Goal](#Goal)
-* [Process](#Process)
 * [CAD](#CAD)
 * [Code](#Code)
 * [Building](#Building)
@@ -14,9 +13,6 @@
 ---
 # `Goal`
 The goal of this project was to create a PID system that would control a dveice. We decided to create an arm with a fan on one end, that would use the PID to power the fan and balance the arm at a certain angle. This meant that we needed a gyroscope to know the current angle, and a small drone fan. We also needed a way to change the PID variable while testing the design, so we would need to make a rotary encoder + LCD menu.
-
-# `Process`
-
 
 # `CAD`
 We had made a planing papper before starting to outline the design we wanted. This made the process a lot easier, as I didn't have to make it up as I went. The basic design was pretty simple at first, two supports and an arm. It's always the details that are problematic, though. One such detail is how we have the arm spin. The original plan was to have a ball bearing in the arm and a rod through the supports and arms. It turned out the bearing was too big, and also unnecessary for this small of a design. We went instead for a bushing design, where there is a static rod connected that the arm spins around, no bearing needed.
@@ -176,7 +172,8 @@ while True:
 </details>
         
 # `Building`
-
+The actual building of the frame was pretty easy, since its literally 4 parts. The wiring was a nightmare though.
+        
 ## Switching Transistors
 We were at the point that we had everything working **except** for the motor (which is kind of important). We got the motor working through some tinkering, and using a transistor to utilize the 6V battery pack for the motor. When connected directly to the 6v and ground it went super fast, but on max power from the PWM and transistor it could barely lift itself. Thanks to Mr. Dierolf we found that the bottleneck was the transistor, which could only give us about half power. So we switched from using a tiny little NPN transistor to using an actual 6V regulator. The wiring was different, so thanks Paul Weder for the wiring diagram. When switching it on for the first time it went hard. It went past 45, and into an uncontrollable oscillation. Problem solved :) 
 
@@ -187,6 +184,33 @@ We were at the point that we had everything working **except** for the motor (wh
 
 
 # `Problems`
+## Big problems
+* The fan wire broke off at the base.
+  * This is easily the worst thing that could have happened at the time it did. I hate the fan. We had to get a new fan (which was a different size), remake the arm, and re-tune it.
+* The angle kept counting up even when the fan wasnt working.
+  * We had to add an offset into the code to calibrate it.
+* simple_pid didn't want to work.
+  * Switched over to a PID function which works fine.
+* A few variables didn't want to work with the PID function *even though they were global variables already*.
+  * We made sure to tell the function that they were global variables.
 
+## Less severe problems
+* The arm can move side to side on the axle.
+  * Don't worry about it its fine :)
+* Wires interfered with the arm.
+  * We tried (and failed) to crimp some wires ourselves, then gave up and ued shorter wires and jumper wires.
+* The supports are held together by the Metro M4.
+  * *It's fine don't worry about it*
+* When editing variables with the LCD menu, the edit page closed/opened too fast.
+  * We added a cooldown to the button.
+* The LCD wouldn't display the output variable.
+  * Frankly I forgot why I wanted it to do this. Who cares. Thats what the fan does.
+        
+## Side Notes
+* We used no acrylic
+* String/thin wires are terrible. Avoid at all costs.     
+* Planning before starting to build does indeed make the project take less time. Shocker.     
+        
 
 # `Reflection`
+We used no acrylic, which is sure to make up for the absurd amount we used in the tic tac toe project.
