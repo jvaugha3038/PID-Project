@@ -182,6 +182,8 @@ Ah yes, tuning. If only we were able to make sufficent progress here before the 
 
 # `End Result`
 
+https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-803c-50ebdb393c28
+
 
 # `Problems`
 ## Big problems
