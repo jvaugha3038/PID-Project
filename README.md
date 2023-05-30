@@ -15,6 +15,10 @@
 The goal of this project was to create a PID system that would control a dveice. We decided to create an arm with a fan on one end, that would use the PID to power the fan and balance the arm at a certain angle. This meant that we needed a gyroscope to know the current angle, and a small drone fan. We also needed a way to change the PID variable while testing the design, so we would need to make a rotary encoder + LCD menu.
 
 # `CAD`
+
+![Planning_Doc](https://github.com/jvaugha3038/PID-Project/assets/113116247/3aa01ba1-9bcc-4b66-aa9c-25665719a949)
+
+
 [Document](https://cvilleschools.onshape.com/documents/f00cf12c984b3d4ce9458e93/w/95ae618fe06d1a19a8a98ffb/e/a00b791e7332e8573e6656cd)
 
 We had made a planing papper before starting to outline the design we wanted. This made the process a lot easier, as I didn't have to make it up as I went. The basic design was pretty simple at first, two supports and an arm. It's always the details that are problematic, though. One such detail is how we have the arm spin. The original plan was to have a ball bearing in the arm and a rod through the supports and arms. It turned out the bearing was too big, and also unnecessary for this small of a design. We went instead for a bushing design, where there is a static rod connected that the arm spins around, no bearing needed.
