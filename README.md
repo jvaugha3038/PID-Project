@@ -190,8 +190,8 @@ https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-8
 * The fan wire broke off at the base.
   * This is easily the worst thing that could have happened at the time it did. I hate the fan. We had to get a new fan (which was a different size), remake the arm, and re-tune it.
 * The angle kept counting up even when the fan wasnt working.
-  * We had to add an offset into the code to calibrate it.
-* simple_pid didn't want to work.
+  * We had to add an offset into the code to calibrate the gyroscope.
+* simple_pid library didn't want to work.
   * Switched over to a PID function which works fine.
 * A few variables didn't want to work with the PID function *even though they were global variables already*.
   * We made sure to tell the function that they were global variables.
@@ -203,14 +203,14 @@ https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-8
   * We tried (and failed) to crimp some wires ourselves, then gave up and ued shorter wires and jumper wires.
 * The supports are held together by the Metro M4.
   * *It's fine don't worry about it*
-* When editing variables with the LCD menu, the edit page closed/opened too fast.
+* When editing variables with the rotary encoder in the LCD menu, the edit page closed/opened too fast.
   * We added a cooldown to the button.
 * The LCD wouldn't display the output variable.
   * Frankly I forgot why I wanted it to do this. Who cares. Thats what the fan does.
         
 ## Side Notes
 * We used no acrylic
-* String/thin wires are terrible. Avoid at all costs.     
+* String/thin wires are terrible. Avoid at all costs.    
 * Planning before starting to build does indeed make the project take less time. Shocker.     
         
 
