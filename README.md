@@ -179,6 +179,7 @@ We were at the point that we had everything working **except** for the motor (wh
 
 # `Tuning`
 Ah yes, tuning. If only we were able to make sufficent progress here before the fan wire broke.
+After the whole fan incident, we could actually start tuning. And by that I mean it immediately started working at default values. Cool.
 
 # `End Result`
 
@@ -211,8 +212,8 @@ https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-8
 ## Side Notes
 * We used no acrylic
 * String/thin wires are terrible. Avoid at all costs.    
-* Planning before starting to build does indeed make the project take less time. Shocker.     
+* Planning before starting to build does indeed make the project take less time. Shocker.
+* We finished this and the tic tac toe project on the same day.
         
-
 # `Reflection`
-We used no acrylic, which is sure to make up for the absurd amount we used in the tic tac toe project.
+We used no acrylic, which is sure to make up for the absurd amount we used in the tic tac toe project. Speaking of which, this project felt much more manageable, since it was a much smaller and less ambitious project that used an LCD and a rotary encoder, both of which we used in the last class assignment we did. The fan breaking halted all progress for about a week, and my inability to understand simple-pid also didn't help, but we still managed to create a working project on time. Personally, I much preferred the PID function over simple-pid, because its much easier to understand. I just cut out some of the variables at the beginning of it, and started plugging number into it and it worked fine. Also the complete lack of tuning our project required made it very easy. 
