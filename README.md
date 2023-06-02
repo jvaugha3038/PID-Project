@@ -21,7 +21,7 @@ The goal of this project was to create a PID system that would control a dveice.
 
 [Document](https://cvilleschools.onshape.com/documents/f00cf12c984b3d4ce9458e93/w/95ae618fe06d1a19a8a98ffb/e/a00b791e7332e8573e6656cd)
 
-We had made a planing papper before starting to outline the design we wanted. This made the process a lot easier, as I didn't have to make it up as I went. The basic design was pretty simple at first, two supports and an arm. It's always the details that are problematic, though. One such detail is how we have the arm spin. The original plan was to have a ball bearing in the arm and a rod through the supports and arms. It turned out the bearing was too big, and also unnecessary for this small of a design. We went instead for a bushing design, where there is a static rod connected that the arm spins around, no bearing needed.
+We had made a planing paper before starting to outline the design we wanted. This made the process a lot easier, as I didn't have to make it up as I went. The basic design was pretty simple at first, two supports and an arm. It's always the details that are problematic, though. One such detail is how we have the arm spin. The original plan was to have a ball bearing in the arm and a rod through the supports and arms. It turned out the bearing was too big, and also unnecessary for this small of a design. We went instead for a bushing design, where there is a static rod connected that the arm spins around, no bearing needed.
 There was also the issue of weight, as the tiny little motor needed to be able to lift itself and the arm off of the ground. I had designed the arm to be very light and have a counterweight to balance out the weight, and thanks to Onshape's handy center of mass feature, I was able to determine that the center of mass was just 100mm towards the motor. Given that the arm was 250mm long, that seemed to be a pretty good spot, and it confirmed that the motor wouldn't be overburdened. 
 
 A rude awakening came when I remembered that we like need an arduino, screen, and rotary encoder to, ya know, to do the pid'ing. So I had to make space for those, which made it look a little worse to be honest. I got it all to work though, except for the battery pack. The pack was just way bigger than I thought it would be, and I couldn't fit it between the supports like I did with the arduino. My solution was to just have it sit on one of the supports. No connections, just sitting there :). I know this wasn't the most professional decision, but my idea was that it could help weigh down the support to stop it from moving while giving easy access to the batteries.
@@ -208,7 +208,7 @@ https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-8
 * The arm can move side to side on the axle.
   * Don't worry about it its fine :)
 * Wires interfered with the arm.
-  * We tried (and failed) to crimp some wires ourselves, then gave up and ued shorter wires and jumper wires.
+  * We tried (and failed) to crimp some wires ourselves, then gave up and used shorter wires and jumper wires.
 * The supports are held together by the Metro M4.
   * *It's fine don't worry about it*
 * When editing variables with the rotary encoder in the LCD menu, the edit page closed/opened too fast.
@@ -221,6 +221,7 @@ https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-8
 * String/thin wires are terrible. Avoid at all costs.    
 * Planning before starting to build does indeed make the project take less time. Shocker.
 * We finished this and the tic tac toe project on the same day.
+* The onshape document had 3 pages, compared to the 21 pages in the tic tac toe project.
         
 # `Reflection`
-We used no acrylic, which is sure to make up for the absurd amount we used in the tic tac toe project. Speaking of which, this project felt much more manageable, since it was a much smaller and less ambitious project that used an LCD and a rotary encoder, both of which we used in the last class assignment we did. The fan breaking halted all progress for about a week, and my inability to understand simple-pid also didn't help, but we still managed to create a working project on time. Personally, I much preferred the PID function over simple-pid, because its much easier to understand. I just cut out some of the variables at the beginning of it, and started plugging number into it and it worked fine. Also the complete lack of tuning our project required made it very easy. 
+We used no acrylic, which is sure to make up for the absurd amount we used in the tic tac toe project. Speaking of which, this project felt much more manageable, since it was a much smaller and less ambitious project that used an LCD and a rotary encoder, both of which we used in the last class assignment we did. The fan breaking halted all progress for about a week, and my inability to understand simple-pid also didn't help, but we still managed to create a working project on time. Personally, I much preferred the PID function over simple-pid, because its much easier to understand. I just cut out some of the variables at the beginning of it, and started plugging numbers into it and it worked fine. Also the complete lack of tuning our project required made it very easy. 
