@@ -13,7 +13,7 @@
 * [Reflection](#Reflection)
 ---
 # `Goal`
-The goal of this project was to create a PID system that would control a dveice. We decided to create an arm with a fan on one end, that would use the PID to power the fan and balance the arm at a certain angle. This meant that we needed a gyroscope to know the current angle, and a small drone fan. We also needed a way to change the PID variable while testing the design, so we would need to make a rotary encoder + LCD menu.
+The goal of this project was to create a PID system that would control a device. We decided to create an arm with a fan on one end, that would use the PID to power the fan and balance the arm at a certain angle. This meant that we needed a gyroscope to know the current angle, and a small drone fan. We also needed a way to change the PID variable while testing the design, so we would need to make a rotary encoder + LCD menu.
 
 # `CAD`
 
@@ -181,7 +181,7 @@ while True:
 </details>
         
 # `Building`
-The actual building of the frame was pretty easy, since its literally 4 parts including the Metro M4. The wiring was a nightmare though. We needed a lot of wires, because we had a ton of things we were connecting (6 things total, 3 of which needed 4+ wires) and all of these things were very close to eachother. We also had to keep the wires low and out of the way so they wouldn't run into the fan and mess with the PID. Lastly, the fan wires had to reach all the way to the end of the arm, and every other wire had to be as short as possible.
+The actual building of the frame was pretty easy, since its literally 4 parts including the Metro M4. The wiring was a nightmare though. We needed a lot of wires, because we had a ton of things we were connecting (6 things total, 3 of which needed 4+ wires) and all of these things were very close to eachother. We also had to keep the wires low and out of the way so they wouldn't run into the fan and mess with the PID. Lastly, the fan wires had to reach all the way to the end of the arm, and every other wire had to be as short as possible. To do this, we usually ran wires under some other wires to essentially pin them down.
         
 ![image](https://github.com/jvaugha3038/PID-Project/assets/112961338/56d9fe31-49f1-4ab0-b5a7-33a476495255)
         
@@ -213,6 +213,7 @@ We were at the point that we had everything working **except** for the motor (wh
 # `Tuning`
 Ah yes, tuning. If only we were able to make sufficent progress here before the fan wire broke.
 After the whole fan incident, we could actually start tuning. And by that I mean it immediately started working at default values. Cool.
+(New Result) It may need actual tuning.
 
 # `End Result`
 
@@ -222,9 +223,9 @@ https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-8
 # `Problems`
 ## Big problems
 * The fan wire broke off at the base.
-  * This is easily the worst thing that could have happened at the time it did. I hate the fan. We had to get a new fan (which was a different size), remake the arm, and re-tune it.
+  * This is easily the worst thing that could have happened at the time it did. I hate the fan. We had to get a new fan (which was a different size), and make a new attachment onto the end of the arm to hold it (see video).
 * The angle kept counting up even when the fan wasnt working.
-  * We had to add an offset into the code to calibrate the gyroscope.
+  * This was a recurring problem. The first time, we had to add an offset into the code to calibrate the gyroscope, and actually make the degree function work as intended because it subtracted the previous angle instead of adding it. The second time,
 * simple_pid library didn't want to work.
   * Switched over to a PID function which works fine.
 * A few variables didn't want to work with the PID function *even though they were global variables already*.
@@ -232,7 +233,7 @@ https://github.com/jvaugha3038/PID-Project/assets/113116247/464c805f-a0af-45dd-8
 
 ## Less severe problems
 * The arm can move side to side on the axle.
-  * Don't worry about it its fine :)
+  * Don't worry about it its fine :) This doesn't actually affect the results, as it will usually shift to one side and stay there.
 * Wires interfered with the arm.
   * We tried (and failed) to crimp some wires ourselves, then gave up and used shorter wires and jumper wires.
 * The supports are held together by the Metro M4.
