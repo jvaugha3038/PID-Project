@@ -38,7 +38,7 @@ The code was challenging overall, but once the main hurdle was cleared (finding 
         
 <p>
         
-```
+```python
 
 import board
 from lcd.lcd import LCD
