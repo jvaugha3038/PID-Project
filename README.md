@@ -6,6 +6,7 @@
 * [CAD](#CAD)
 * [Code](#Code)
 * [Building](#Building)
+* [Bill of Materials](#Bill-of-Materials)
 * [Tuning](#Tuning)
 * [End Result](#EndResult)
 * [Problems](#Problems)
@@ -181,6 +182,29 @@ while True:
         
 # `Building`
 The actual building of the frame was pretty easy, since its literally 4 parts including the Metro M4. The wiring was a nightmare though. We needed a lot of wires, because we had a ton of things we were connecting (6 things total, 3 of which needed 4+ wires) and all of these things were very close to eachother. We also had to keep the wires low and out of the way so they wouldn't run into the fan and mess with the PID. Lastly, the fan wires had to reach all the way to the end of the arm, and every other wire had to be as short as possible.
+## 'Bill of Materials'
+       
+| Item | Name                               | Quantity |
+| ---- | ---------------------------------- | -------- |
+| 1    | Arm                                | 1        |
+| 2    | Bushing                            | 2        |
+| 3    | Dowel (6.5cm+)                     | 1        |
+| 4    | Base                               | 1        |
+| 5    | Set Holder                         | 2        |
+| 6    | Base                               | 1        |
+| 7    | Gyroscope                          | 1        |
+| 8    | Encoder Knob                       | 1        |
+| 9    | Rotary Encoder                     | 1        |
+| 10   | Panel Mount SPDT                   | 1        |
+| 11   | Arduino Uno                        | 1        |
+| 12   | LCD                                | 1        |
+| 13   | LCD Backpack                       | 1        |
+| 14   | LCD_PCB                            | 1        |
+| 15   | metal_casing                       | 1        |
+| 16   | Battery Pack                       | 1        |
+| 17   | #4-40 x 12" Socket Head Cap Screws | 6        |
+| 18   | #4-40 Machine Screw Nuts           | 6        |
+        
         
 ## Switching Transistors
 We were at the point that we had everything working **except** for the motor (which is kind of important). We got the motor working through some tinkering, and using a transistor to utilize the 6V battery pack for the motor. When connected directly to the 6v and ground it went super fast, but on max power from the PWM and transistor it could barely lift itself. Thanks to Mr. Dierolf we found that the bottleneck was the transistor, which could only give us about half power. So we switched from using a tiny little NPN transistor to using an actual 6V regulator. The wiring was different, so thanks Paul Weder for the wiring diagram. When switching it on for the first time it went hard. It went past 45, and into an uncontrollable oscillation. Problem solved :) 
