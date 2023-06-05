@@ -204,6 +204,7 @@ The actual building of the frame was pretty easy, since its literally 4 parts in
 | 13   | Battery Pack                       | 1        |
 | 14   | #4-40 x 12" Socket Head Cap Screws | 6        |
 | 15   | #4-40 Machine Screw Nuts           | 6        |
+| 16   | 8.5 x 20mm drone motor & propeller | 1        |
         
         
 ## Switching Transistors
