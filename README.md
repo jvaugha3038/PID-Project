@@ -1,14 +1,14 @@
 # PID-Project
 
 ## Table of Contents
-* [Table of Contents](#TableOfContents)
+* [Table of Contents](#Table-of-Contents)
 * [Goal](#Goal)
 * [CAD](#CAD)
 * [Code](#Code)
 * [Building](#Building)
 * [Bill of Materials](#Bill-of-Materials)
 * [Tuning](#Tuning)
-* [End Result](#EndResult)
+* [End Result](#End-Result)
 * [Problems](#Problems)
 * [Reflection](#Reflection)
 ---
