@@ -182,6 +182,9 @@ while True:
         
 # `Building`
 The actual building of the frame was pretty easy, since its literally 4 parts including the Metro M4. The wiring was a nightmare though. We needed a lot of wires, because we had a ton of things we were connecting (6 things total, 3 of which needed 4+ wires) and all of these things were very close to eachother. We also had to keep the wires low and out of the way so they wouldn't run into the fan and mess with the PID. Lastly, the fan wires had to reach all the way to the end of the arm, and every other wire had to be as short as possible.
+        
+![image](https://github.com/jvaugha3038/PID-Project/assets/112961338/56d9fe31-49f1-4ab0-b5a7-33a476495255)
+        
 ## Bill of Materials
        
 | Item | Name                               | Quantity |
