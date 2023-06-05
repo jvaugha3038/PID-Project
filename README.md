@@ -195,18 +195,15 @@ The actual building of the frame was pretty easy, since its literally 4 parts in
 | 4    | Base                               | 1        |
 | 5    | Set Holder                         | 2        |
 | 6    | Base                               | 1        |
-| 7    | Gyroscope                          | 1        |
-| 8    | Encoder Knob                       | 1        |
-| 9    | Rotary Encoder                     | 1        |
-| 10   | Panel Mount SPDT                   | 1        |
-| 11   | Arduino Uno                        | 1        |
-| 12   | LCD                                | 1        |
-| 13   | LCD Backpack                       | 1        |
-| 14   | LCD_PCB                            | 1        |
-| 15   | metal_casing                       | 1        |
-| 16   | Battery Pack                       | 1        |
-| 17   | #4-40 x 12" Socket Head Cap Screws | 6        |
-| 18   | #4-40 Machine Screw Nuts           | 6        |
+| 7    | Gyroscope (MPU6050)                | 1        |
+| 8    | Rotary Encoder                     | 1        |
+| 9    | Panel Mount SPDT                   | 1        |
+| 10   | Arduino Uno                        | 1        |
+| 11   | LCD                                | 1        |
+| 12   | LCD Backpack                       | 1        |
+| 13   | Battery Pack                       | 1        |
+| 14   | #4-40 x 12" Socket Head Cap Screws | 6        |
+| 15   | #4-40 Machine Screw Nuts           | 6        |
         
         
 ## Switching Transistors
